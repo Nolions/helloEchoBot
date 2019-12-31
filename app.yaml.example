@@ -1,0 +1,12 @@
+runtime: go112
+main: ./
+
+env_variables:
+  TELEGRAM_BOT_WEBHOOK_URL: <your telegram bot webhook url>
+  TELEGRAM_BOT_TOKEN: <your telegram bot token>
+
+service: default
+
+handlers:
+  - url: /.*
+    script: auto
